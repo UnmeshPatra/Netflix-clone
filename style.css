@@ -147,75 +147,50 @@ nav button {
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgb(77, 75, 75);
 }
-.first{
+.first {
     display: flex;
     justify-content: center;
-    max-width: 75vw;
+    max-width: 70vw ;
     margin: auto;
     color: white;
     justify-content: center;
     align-items: center;
-    padding: 45px;
-    flex-wrap: wrap;
-}
-.head1{
-    font-weight: 1000;
-    font-size: 50px;
-    color: white;
-    /* padding: 55px 0; */
-}
-.sec1{
-    font-weight: 500;
-    font-size: 22px;
 }
 
-.image1{
+
+
+.secImg {
     position: relative;
 }
 
-.image1 img{
+.secImg img {
     width: 555px;
     position: relative;
     z-index: 10;
-   
 }
-.image1 video{
+
+.secImg video {
     position: absolute;
-    top: 69px;
-    right: 62px;
-    width: 424px;
+    top: 120px;
+    right: 80px;
+    width: 400px;
 }
 
-.image2{
+section.first>div {
     display: flex;
+    flex-direction: column;
+    padding: 34px 0;
 }
 
-.image2 img{
-    width: 83vh;
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
 }
 
-.third{
-    display: flex;
-    justify-content: center;
-    max-width: 75vw;
-    margin: auto;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    padding: 95px 45px 0px;
-}
-.image3 img{
-    width: 35vw;
-    position: relative;
-    z-index: 10;
-    top: -41px;
-}
-.image3 video{
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
     
-    position: absolute;
-    right: 294px;
-    width: 362px;
-  
 }
 .faq p{
     text-align: center;
@@ -227,7 +202,7 @@ nav button {
     background-color: black;
     color: white;
     padding: 43px;
-
+    
 }
 .faqbox:hover{
     background-color: rgba(128, 128, 128, 0.532);
@@ -245,7 +220,7 @@ nav button {
     margin: 9px auto;
     font-weight: 500;
     cursor: pointer;
-
+    
     /* height: 52px; */
 }
 footer{
@@ -260,16 +235,16 @@ footer{
     color: white;
     padding: 34px;
     
-
+    
 }
 
 .footer a{
     font-size: 14px;
-
-
+    
+    
     color: white;
-   
-
+    
+    
 }
 .footer-item{
     display: flex;
@@ -279,3 +254,59 @@ footer{
 
 
 
+@media screen and (max-width:1140px){
+    .first{
+        /* flex-wrap: wrap; */
+        max-width: 85vw;
+    }
+    section.first>div :nth-child(1) {
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    section.first>div :nth-child(2) {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    section.first>div {
+        display: flex;
+        flex-direction: column;
+        padding: 34px 0 30px;
+    }
+}
+@media screen and (max-width:960px){
+    .first{
+        flex-wrap: wrap;
+        max-width: 95vw;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+    }
+    .secImg img {
+        width: 401px;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .secImg video {
+        position: absolute;
+        top: 80px;
+        right: 16px;
+        width: 330px;
+    }
+    section.first>div :nth-child(1) {
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    section.first>div :nth-child(2) {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    section.first>div {
+        display: flex;
+        flex-direction: column;
+        padding: 34px 0 30px;
+    }
+    
+}
